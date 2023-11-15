@@ -1,4 +1,4 @@
-[![Licence](https://img.shields.io/github/license/mbagheri20/ramandb/ramandb.svg)](LICENSE.txt)
+[![Licence](https://img.shields.io/github/license/mbagheri20/ramandb.svg)](LICENSE.txt)
 [![SciData](https://img.shields.io/badge/Sci._Data-Bagheri_M.%26_Komsa_H.P._(2023)-red)](https://doi.org/10.1038/s41597-023-01988-5)
 
 # Computational Raman Database
