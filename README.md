@@ -13,7 +13,7 @@ In progress...
 ## How to use
 
 
-You can brwose the latest version of database on [Computational Raman Database](https://ramandb.oulu.fi/) website.
+You can browse the latest version of database on [Computational Raman Database](https://ramandb.oulu.fi/) website.
 
 
 
