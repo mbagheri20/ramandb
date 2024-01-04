@@ -28,7 +28,7 @@ If you have used ramandb, please cite the following article:
   https://doi.org/10.1038/s41597-023-01988-5  (Open Access)
 
   ```
-  @article{FCDimen,
+  @article{CRD,
      author = {Bagheri, Mohammad and Komsa, Hannu-Pekka},
      title = {High-throughput computation of Raman spectra from first principles}
      journal = {Scientific Data},
