@@ -3,19 +3,19 @@
 
 # Computational Raman Database
 
-In progress...
-
-## Calculations Details
+In this repository, all the versions of datasets contain Raman tensors and other vibrational information, such as phonon eigenmodes, Born charges (adopted from the Phonon database), and symmetry information, stored in a JSON document that can be queried with a simple python script.
+You can browse the latest version of the database on [Computational Raman Database](https://ramandb.oulu.fi/) website. where you can find interactive Raman, IR spectra, and Phonon band structures with other related data on each structure page. The materials can be searched using formula, the number of atoms, Materials project id, dimensionality, and a lot of other keywords.
 
 ## Update logs
 
+### version 1.0.1 (2024.0.1.24)
 
-## How to use
+We updated Raman tensors of 33 materials after the first release of the database due to the calculation problems, mainly related to how errors were handled.
 
+For 9 materials, VASP 5.4.4 gave two warnings "Warning from LATTYP: Got some problem with cell dimensions!" and "LRF_COMMUTATOR internal error: the vector ******* |phi(0)> is not orthogonal to |phi(0)>". Both warnings were ignored in our previous calculations by the error control center (Custodian). We recalculated all these materials using VASP 6, which did not show any such issues.
 
-You can browse the latest version of database on [Computational Raman Database](https://ramandb.oulu.fi/) website.
-
-
+In addition, in some cases the dielectric function calculations were not fully converged. This was partly due to ignoring "internal ERROR: LINEAR_RESPONSE_DIIS matrix is zero, try to call with LRESET". Based on our initial benchmarking, we opted to ignore this warning. In addition, VASP sometimes incorrectly marked the calculations as converged when they were not. We checked for possible poorly converged materials in the whole database and recalculated them with VASP 6 if either the energy change ("dE" in VASP output) or the difference between input and output charge density ("rms(c)" in VASP output) of the last step is larger than 0.1. For 24 structures the results changed markedly, i.e., the convergence parameters became smaller, and the Raman spectra also changed. These are included in the updated dataset.
+list of changed materials can be found [here](https://github.com/mbagheri20/ramandb/blob/main/list.txt)
 
 ## How to cite
 
