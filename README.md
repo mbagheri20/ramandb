@@ -45,5 +45,5 @@ If you have used ramandb, please cite the following article:
   
 ## Acknowledgements
 
-Phonon results are adapted from [phonondb](http://phonondb.mtl.kyoto-u.ac.jp/index.html) under CC BY 4.0.
+Phonon results are adapted from [phonondb](https://github.com/atztogo/phonondb) under CC BY 4.0.
 
